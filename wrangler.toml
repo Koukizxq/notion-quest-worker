@@ -1,0 +1,20 @@
+name = "notion-quest-worker"
+main = "index.js"
+compatibility_date = "2025-10-02"
+
+[triggers]
+crons = [
+  # Quest Reset – every day at 00:00 UK time
+  "0 23 * * *",   # 23:00 UTC → 00:00 UK
+
+  # Quest Scheduler – every day at 09:00 UK time
+  "0 8 * * *",    # 08:00 UTC → 09:00 UK
+
+  # Quest Log – run every hour (we’ll filter in code so it only acts after 10AM UK)
+  "0 * * * *"
+]
+
+[vars]
+DAILY_TRACKER_DS = "26cad899-3405-8000-a848-000b2832e1fa"
+QUEST_LOG_DS     = "26cad899-3405-80d1-9925-000b49edaef1"
+QUEST_MASTER_DS  = "26cad899-3405-8075-a6a3-000b6573262f"
