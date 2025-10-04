@@ -1,4 +1,4 @@
-name = "notion-quest-worker"
+name = "quest-automation"
 main = "index.js"
 compatibility_date = "2025-10-02"
 
