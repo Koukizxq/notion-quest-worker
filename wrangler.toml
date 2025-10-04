@@ -7,15 +7,15 @@ crons = ["0 23 * * *", "0 8 * * *", "0 * * * *"]
 
 [[kv_namespaces]]
 binding = "QUEST_MASTER_DS"
-id = "26cad899-3405-8075-a6a3-000b6573262f"
+id = "82a781e39b544f9aa0d971f97f2862fc"
 
 [[kv_namespaces]]
 binding = "QUEST_LOG_DS"
-id = "26cad899-3405-80d1-9925-000b49edaef1"
+id = "fc116965737f4ce594aeee12223e0f72"
 
 [[kv_namespaces]]
 binding = "DAILY_TRACKER_DS"
-id = "26cad899-3405-8000-a848-000b2832e1fa"
+id = "936ffd43f0414a32b723f74592719699"
 
 [observability.logs]
 enabled = true
