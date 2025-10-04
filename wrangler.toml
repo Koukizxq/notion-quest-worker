@@ -5,9 +5,6 @@ compatibility_date = "2025-10-04"
 [triggers]
 crons = ["0 23 * * *", "0 8 * * *", "0 * * * *"]
 
-[vars]
-NOTION_TOKEN = "your-secret-notion-token"   # only if you want to keep locally (not recommended)
-
 [[kv_namespaces]]
 binding = "QUEST_MASTER_DS"
 id = "26cad899-3405-8075-a6a3-000b6573262f"
@@ -19,3 +16,6 @@ id = "26cad899-3405-80d1-9925-000b49edaef1"
 [[kv_namespaces]]
 binding = "DAILY_TRACKER_DS"
 id = "26cad899-3405-8000-a848-000b2832e1fa"
+
+[observability.logs]
+enabled = true
